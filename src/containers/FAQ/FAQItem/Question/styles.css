@@ -1,0 +1,20 @@
+@import 'assets/styles/variables.css';
+
+.question {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0.7rem;
+
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-semibold);
+
+  .icon {
+    max-width: 35px;
+    max-height: 35px;
+
+    width: 100%;
+
+    margin-right: 1.25rem;
+  }
+}

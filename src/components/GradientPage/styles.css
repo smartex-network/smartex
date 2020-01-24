@@ -1,0 +1,7 @@
+@import 'assets/styles/colors.css';
+
+.gradient {
+  background-image: var(--brand-gradient);
+  background-repeat: no-repeat;
+  background-size: 100% 625px;
+}

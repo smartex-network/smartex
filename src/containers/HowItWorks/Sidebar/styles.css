@@ -1,0 +1,26 @@
+@import 'assets/styles/variables.css';
+
+.sidebar {
+  .nav {
+    .nav-item {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    .sub-nav {
+      margin-top: 5px;
+      padding-left: 1.25rem;
+
+      a {
+        padding: 3px 0;
+
+        font-size: 0.875rem;
+        font-weight: var(--font-weight-medium);
+      }
+    }
+  }
+}

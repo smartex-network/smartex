@@ -1,0 +1,125 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+.how-to {
+  padding: 3.75rem 0;
+
+  :global {
+    .container {
+      @media (--breakpoint-xxl) {
+        max-width: 1500px;
+      }
+    }
+  }
+
+  .title {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+    opacity: 0.6;
+
+    @media (--breakpoint-md) {
+      max-width: 700px;
+    }
+  }
+
+  .steps {
+    padding-bottom: 9.375rem;
+
+    background-image: url('assets/images/logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    .ethereum-link {
+      text-align: center;
+
+      a {
+        margin-top: 1rem;
+
+        color: #000000;
+        font-size: 0.8125rem;
+        font-weight: var(--font-weight-medium);
+        text-transform: uppercase;
+        text-decoration: underline;
+
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .step {
+    display: flex;
+
+    .step-inner {
+      max-width: 646px;
+      width: 100%;
+
+      color: #ffffff;
+
+      font-weight: var(--font-weight-semibold);
+
+      .number {
+        position: relative;
+        top: 60px;
+        left: calc(3rem - 8px);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+
+        border: 8px solid #ffffff;
+        border-radius: 50%;
+        background-color: #00101d;
+
+        font-size: 4rem;
+      }
+
+      .description {
+        padding: 3rem;
+        padding-top: 6rem;
+
+        border-radius: 10px;
+        background-color: #00101d;
+
+        font-size: 1.125rem;
+        line-height: 1.39;
+      }
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+
+      .step-inner {
+        .number {
+          margin-left: auto;
+          left: initial;
+          right: calc(3rem - 8px);
+        }
+      }
+    }
+  }
+}

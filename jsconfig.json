@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "baseUrl": "src",
+    "paths": {
+      "*": [
+        "*",
+        "src/*"
+      ],
+      "constants/*": [ "src/constants/*" ]
+    },
+    "rootDirs": [ ".", "src" ]
+  },
+  "exclude": [ "build", "scripts" ],
+  "include": [ "src/**/*" ]
+}

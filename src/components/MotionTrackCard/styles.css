@@ -1,0 +1,35 @@
+@import 'assets/styles/colors.css';
+
+.with-motion-track {
+  z-index: 1;
+  position: relative;
+
+  .motion-track {
+    z-index: -1;
+    position: absolute;
+
+    height: 100%;
+
+    border-radius: 10px;
+    background-color: var(--brand-white);
+    opacity: 0.2;
+
+    &.first {
+      top: -10px;
+      left: 10px;
+      right: 10px;
+    }
+
+    &.second {
+      top: -20px;
+      left: 20px;
+      right: 20px;
+    }
+
+    &.third {
+      top: -30px;
+      left: 30px;
+      right: 30px;
+    }
+  }
+}

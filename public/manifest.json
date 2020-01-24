@@ -1,0 +1,8 @@
+{
+  "short_name": "Smartex",
+  "name": "Smartex",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#00101d",
+  "background_color": "#ffffff"
+}

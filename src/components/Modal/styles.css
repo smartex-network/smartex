@@ -1,0 +1,110 @@
+@import "assets/styles/colors.css";
+
+:root {
+  --animationTime: 250;
+}
+
+:export {
+  animationTime: var(--animationTime);
+}
+
+.modal {
+  .overlay {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 9999;
+
+    .content {
+      position: relative;
+
+      max-width: 770px;
+      width: 100%;
+      padding: 0 1rem;
+
+      opacity: 0;
+
+      transition: opacity var(--animationTime)ms ease-in-out;
+
+      &-open {
+        opacity: 1;
+      }
+
+      &-close {
+        opacity: 0;
+      }
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 0.625rem;
+      right: 1.5rem;
+
+      width: 30px;
+      height: 30px;
+
+      cursor: pointer;
+
+      svg {
+        circle,
+        path {
+          stroke: #000000;
+        }
+      }
+    }
+
+    .modal-container {
+      padding: 2rem;
+
+      border-radius: 10px;
+      background-color: var(--brand-white);
+      box-shadow: 0 5px 7px 0 #d8d8d8;
+    }
+  }
+
+  &.fullscreen {
+    .overlay {
+      .content {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+
+        padding: 0;
+      }
+
+      .modal-container {
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 0;
+
+        background-color: #d84941;
+      }
+
+      .close-modal {
+        top: 1rem;
+        right: 1rem;
+
+        svg {
+          circle,
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+.level {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 500px;
+  height: 100%;
+
+  border-radius: 25px;
+  background-color: var(--brand-white);
+  box-shadow: 0 4px 5px 0 #d8d8d8;
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: auto;
+    padding: 1em 1em 2em;
+
+    .heading {
+      color: #545d66;
+      font-size: 1.125rem;
+      font-weight: var(--font-weight-light);
+      text-transform: uppercase;
+    }
+
+    .level-icon {
+      height: 150px;
+      width: 150px;
+
+      width: 100%;
+
+      margin-top: 1em;
+      margin-bottom: 1em;
+
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .level-price {
+      margin-bottom: auto;
+
+      color: var(--brand-dark);
+      font-size: 2rem;
+      font-weight: var(--font-weight-regular);
+      text-align: center;
+    }
+
+    .level-duration {
+      margin: auto;
+
+      color: var(--brand-grey-light);
+      font-size: 0.9rem;
+      font-weight: var(--font-weight-medium);
+    }
+
+    .action-button {
+      width: 100%;
+      margin-top: auto;
+
+      .button {
+        max-width: 190px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .profit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    max-height: 105px;
+    width: 100%;
+    padding: 2em 1em;
+
+    border-top: 2px solid #f9f9f9;
+
+    .profit-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 50%;
+
+      .label {
+        margin-bottom: 1em;
+
+        color: var(--brand-grey-light);
+        font-size: 0.8rem;
+        font-weight: var(--font-weight-medium);
+      }
+
+      .value {
+        color: #2f3841;
+        font-size: 0.875rem;
+        font-weight: var(--font-weight-medium);
+        text-align: center;
+      }
+    }
+  }
+
+  &.inactive {
+
+  }
+}

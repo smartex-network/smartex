@@ -1,0 +1,86 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+footer {
+  margin-top: auto;
+  padding: 1.75rem 0;
+
+  :global {
+    .container {
+      @media (--breakpoint-xxl) {
+        max-width: 1500px;
+      }
+    }
+  }
+
+  .company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    padding: 0.5rem 0;
+
+    .logo {
+      width: 70px;
+      height: 70px;
+
+      margin-right: 1.5rem;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      color: #00101d;
+      font-size: 0.82rem;
+      font-weight: var(--font-weight-medium);
+
+      .name {
+        margin-bottom: 1rem;
+      }
+
+      .copyright {
+        line-height: 1.5;
+      }
+    }
+
+    @media (--breakpoint-md) {
+      justify-content: flex-start;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5rem 0;
+
+    color: #00101d;
+    font-size: 0.82rem;
+    font-weight: var(--font-weight-medium);
+    text-decoration: underline;
+    opacity: 0.5;
+
+    a {
+      margin-bottom: 10px;
+
+      color: #00101d;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (--breakpoint-md) {
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import 'assets/styles/variables.css';
+@import 'assets/styles/colors.css';
+
+.sidebar {
+  margin-bottom: 2rem;
+
+  padding: 1.5rem;
+
+  border-radius: 25px;
+  background-color: var(--brand-white);
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem 1.5rem;
+
+    min-width: 90px;
+    min-height: 90px;
+
+    border-radius: 25px;
+
+    color: var(--brand-grey-light);
+
+    .menu-icon {
+      font-size: 1.875rem;
+    }
+
+    .text {
+      display: none;
+
+      font-size: 0.875rem;
+      font-weight: var(--font-weight-medium);
+    }
+
+    &.active {
+      background-color: var(--brand-active);
+      color: var(--brand-white);
+
+      .icon {
+        border-color: var(--brand-white);
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media (--breakpoint-lg) {
+    max-width: 190px;
+
+    box-shadow: 0 7px 5px 0 #d8d8d8;
+
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .item {
+      .menu-icon {
+        margin-bottom: 0.6rem;
+      }
+
+      .text {
+        display: block;
+      }
+    }
+  }
+}

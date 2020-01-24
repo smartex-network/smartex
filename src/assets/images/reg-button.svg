@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 253 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>button</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-smartex" transform="translate(-356.000000, -471.000000)">
+            <g id="Group-3" transform="translate(356.000000, 213.000000)">
+                <g id="left-side">
+                    <g id="reg-button" transform="translate(0.000000, 258.000000)">
+                        <g id="button">
+                            <polygon id="Rectangle" fill-opacity="0.3" fill="#3455BD" points="34.4168627 0 215.72587 0 253 31.8627451 215.72587 65 34.4168627 65 7.66412248e-13 31.8627451"></polygon>
+                            <polygon id="Rectangle" fill="#3455BD" points="44.8815816 15 210.243004 15 229 32.5 210.243004 50 44.8815816 50 25 31.8518519"></polygon>
+                            <!-- <text id="РЕГИСТРАЦИЯ" font-family="Montserrat" font-size="15" font-weight="500" letter-spacing="0.454545455" fill="#FFFFFF">
+                                <tspan x="64.8025" y="38">РЕГИСТРАЦИЯ</tspan>
+                            </text> -->
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+@import 'variables.css';
+@import 'colors.css';
+@import 'fonts.css';
+
+:global {
+  html,
+  body,
+  #app {
+    height: 100%;
+  }
+
+  html {
+    font-size: 13px;
+
+    @media (--breakpoint-sm) {
+      font-size: 14px;
+    }
+
+    @media (--breakpoint-md) {
+      font-size: 15px;
+    }
+
+    @media (--breakpoint-lg) {
+      font-size: 16px;
+    }
+  }
+
+  body {
+    margin: 0;
+
+    background-color: var(--brand-white) !important;
+    font-family: 'Montserrat' !important;
+    line-height: 1 !important;
+
+    box-sizing: border-box;
+
+    &.menu-open,
+    &.fullscreen {
+      overflow: hidden;
+
+      @media (pointer: coarse) {
+        #app {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  * {
+    &:hover,
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}

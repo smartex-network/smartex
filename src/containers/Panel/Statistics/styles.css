@@ -1,0 +1,26 @@
+@import 'assets/styles/colors.css';
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem 0;
+
+  border-radius: 25px;
+  background-color: var(--brand-white);
+
+  overflow: hidden;
+
+  .tabs-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table-wrapper {
+    margin-top: 3rem;
+
+    .transactions {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+.project-statistics {
+  margin-top: 2.25rem;
+  padding: 1.75rem;
+
+  background-image: linear-gradient(to bottom, #00253e, #00101d);
+
+  .global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-bottom: 3rem;
+
+    border-bottom: 1px solid var(--brand-white);
+
+    color: var(--brand-white);
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      padding: 1rem 0;
+
+      .icon {
+        max-height: 80px;
+        height: 100%;
+      }
+
+      .value {
+        margin: 1.5rem 0;
+
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-black);
+      }
+
+      .label {
+        font-weight: var(--font-weight-semibold);
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      @media (--breakpoint-md) {
+        width: 33.3333%
+      }
+    }
+
+    @media (--breakpoint-md) {
+      flex-direction: row;
+    }
+  }
+
+  .users-per-level {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 1.5rem;
+
+    .level {
+      flex: 1 1 50%;
+
+      max-width: 50%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 1rem 0;
+      padding: 0 0.5rem;
+
+      color: var(--brand-white);
+      font-weight: var(--font-weight-extrabold);
+
+      &:nth-child(odd) {
+        border-right: 1px solid var(--brand-white);
+      }
+
+      .value {
+        margin-bottom: 1rem;
+
+        font-size: 1.5rem;
+      }
+
+      .label {
+        font-weight: var(--font-weight-semibold);
+        opacity: 0.8;
+      }
+
+      @media (--breakpoint-md) {
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+
+        &:nth-child(3) {
+          border-right: none;
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          border-right: 1px solid var(--brand-white);
+        }
+      }
+
+      @media (--breakpoint-lg) {
+        flex-basis: 16.6666%;
+        max-width: 16.6666%;
+
+        &:nth-child(3) {
+          border-right: 1px solid var(--brand-white);
+        }
+      }
+    }
+  }
+}

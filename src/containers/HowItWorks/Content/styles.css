@@ -1,0 +1,84 @@
+@import 'assets/styles/variables.css';
+
+.content {
+  color: #000000;
+  text-align: justify;
+
+  * {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 2rem;
+    font-weight: var(--font-weight-semibold);
+    opacity: 1;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p,
+  ol {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+    margin: 2rem auto;
+
+    text-align: center;
+    opacity: 1;
+  }
+
+  .note {
+    font-weight: var(--font-weight-semibold);
+    opacity: 1;
+  }
+
+  .epigraph {
+    font-style: italic;
+  }
+
+  .nav-link {
+    display: inline-block;
+
+    font-weight: var(--font-weight-semibold);
+    text-decoration: underline;
+    opacity: 1;
+  }
+}

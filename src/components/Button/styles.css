@@ -1,0 +1,70 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.7rem 1.3rem;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: #002743;
+  border-radius: 12px;
+
+  background-color: var(--brand-white);
+  color: #002743;
+
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--brand-dark);
+    text-decoration: none;
+  }
+
+  &.black {
+    border-color: var(--brand-blue-dark);
+    background-color: var(--brand-blue-dark);
+    color: var(--brand-white);
+
+    &:hover {
+      color: var(--brand-white);
+    }
+
+    &.empty {
+      color: var(--brand-blue-dark);
+    }
+  }
+
+  &.blue {
+    border-color: var(--brand-blue-medium);
+    background-color: var(--brand-blue-medium);
+    color: var(--brand-white);
+
+    &:hover {
+      color: var(--brand-white);
+    }
+
+    &.empty {
+      color: var(--brand-blue-medium);
+    }
+  }
+
+  &.empty {
+    background-color: var(--brand-white);
+  }
+
+  &.disabled {
+    border-color: transparent;
+    background-color: var(--brand-dark);
+    color: var(--brand-white);
+    opacity: 0.1;
+
+    cursor: not-allowed;
+  }
+}

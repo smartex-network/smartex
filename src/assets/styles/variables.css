@@ -1,0 +1,16 @@
+@custom-media --breakpoint-xs (min-width: 0);
+@custom-media --breakpoint-sm (min-width: 576px);
+@custom-media --breakpoint-md (min-width: 768px);
+@custom-media --breakpoint-lg (min-width: 992px);
+@custom-media --breakpoint-xl (min-width: 1200px);
+@custom-media --breakpoint-xxl (min-width: 1600px);
+
+:root {
+  --font-weight-regular: normal;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: bold;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}

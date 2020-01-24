@@ -1,0 +1,51 @@
+:global {
+  .icon-copy:before {
+    content: "\e906";
+  }
+  .icon-upline:before {
+    content: "\e900";
+  }
+  .icon-exclamation:before {
+    content: "\e901";
+  }
+  .icon-arrows-down .path1:before {
+    content: "\e902";
+    color: rgb(195, 41, 27);
+  }
+  .icon-arrows-down .path2:before {
+    content: "\e903";
+    margin-left: -0.8408203125em;
+    color: rgb(194, 41, 26);
+    opacity: 0.66;
+  }
+  .icon-arrows-down .path3:before {
+    content: "\e904";
+    margin-left: -0.8408203125em;
+    color: rgb(196, 43, 29);
+    opacity: 0.33;
+  }
+  .icon-calendar:before {
+    content: "\e905";
+  }
+  .icon-logout:before {
+    content: "\e907";
+  }
+  .icon-id-card:before {
+    content: "\e908";
+  }
+  .icon-users:before {
+    content: "\e909";
+  }
+  .icon-ads:before {
+    content: "\e90a";
+  }
+  .icon-panel:before {
+    content: "\e90b";
+  }
+  .icon-person:before {
+    content: "\e90c";
+  }
+  .icon-stats:before {
+    content: "\e90d";
+  }
+}

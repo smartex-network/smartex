@@ -1,0 +1,27 @@
+@import 'assets/styles/colors.css';
+
+.address {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: var(--brand-dark);
+    font-family: monospace;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: var(--brand-dark);
+      text-decoration: underline !important;
+    }
+  }
+
+  .copy-address {
+    margin-left: 1.25rem;
+
+    color: var(--brand-dark);
+    font-size: 1.5rem;
+
+    cursor: pointer;
+  }
+}

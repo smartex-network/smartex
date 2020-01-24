@@ -1,0 +1,28 @@
+@import "assets/styles/colors.css";
+@import "assets/styles/variables.css";
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 1.5rem;
+
+  border: none;
+  outline: none !important;
+  background: none;
+
+  cursor: pointer;
+
+  transition: border-color .2s ease-in-out;
+
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-medium);
+
+  &.active {
+    border-radius: 12px;
+    color: var(--brand-white);
+    background-color: var(--brand-dark);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}

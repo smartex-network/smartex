@@ -1,0 +1,9 @@
+@import 'assets/styles/index.css';
+
+@global-import "bootstrap/dist/css/bootstrap.min.css";
+
+.app {
+  position: relative;
+
+  height: 100%;
+}

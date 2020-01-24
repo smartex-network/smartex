@@ -1,0 +1,79 @@
+@import "assets/styles/colors.css";
+@import "assets/styles/variables.css";
+
+.panel {
+  background-color: #f9f9f9;
+
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+
+  .container {
+    max-width: 1500px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .account-info {
+    display: flex;
+    align-items: center;
+
+    .address {
+      display: flex;
+      align-items: center;
+
+      max-width: 80%;
+      padding: 0.625rem;
+
+      border: none;
+      border-radius: 9px;
+
+      background-color: #002743;
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: var(--font-weight-medium);
+      outline: none;
+
+      span {
+        width: 100%;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        opacity: 0.8;
+      }
+    }
+
+    .copy-address {
+      margin: 0 0.625rem;
+
+      color: var(--brand-white);
+      font-size: 1.875rem;
+
+      cursor: pointer;
+    }
+  }
+
+  .logout {
+    margin-left: auto;
+
+    color: var(--brand-white);
+    font-size: 1.875rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (--breakpoint-lg) {
+      margin-left: 2rem;
+    }
+  }
+}

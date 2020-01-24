@@ -1,0 +1,9 @@
+@import 'assets/styles/variables.css';
+
+.answer {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  text-align: justify;
+  opacity: 0.7;
+}

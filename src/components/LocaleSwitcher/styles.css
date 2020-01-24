@@ -1,0 +1,52 @@
+@import 'assets/styles/variables.css';
+
+.locale-switcher {
+  display: flex;
+  align-items: center;
+
+  padding: 2px;
+
+  border-radius: 17.5px;
+
+  background-color: #ffffff;
+
+  .lang {
+    display: flex;
+    align-items: center;
+
+    padding: 3px;
+    padding-right: 5px;
+
+    color: #00192b;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 0.5rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      font-size: 0.8rem;
+      font-weight: var(--font-weight-bold);
+      text-transform: uppercase;
+    }
+
+    &.active {
+      border-radius: 17.5px;
+
+      color: #ffffff;
+      background-color: #00192b;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

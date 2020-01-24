@@ -1,0 +1,43 @@
+@import 'assets/styles/variables.css';
+@import 'assets/styles/colors.css';
+
+.title {
+  margin: 4rem 0;
+
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.faq-list {
+  p {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .list {
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+
+    list-style: none;
+  }
+
+  .note {
+    font-weight: var(--font-weight-bold);
+    opacity: 1;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}

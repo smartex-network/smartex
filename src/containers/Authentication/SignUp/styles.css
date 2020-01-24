@@ -1,0 +1,94 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+.sign-up {
+  width: 100%;
+
+  border-radius: 10px;
+  background-color: var(--brand-white);
+  box-shadow: 0 5px 7px 0 #d8d8d8;
+
+  .heading {
+    margin: 0;
+    padding: 2rem;
+
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .warning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    background-color: var(--brand-blue-medium);
+
+    .icon {
+      max-width: 50px;
+      width: 100%;
+    }
+
+    .text {
+      margin: 0 1.5rem;
+
+      color: var(--brand-white);
+      font-size: 1.125rem;
+      font-weight: var(--font-weight-semibold);
+      text-align: center;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 2rem;
+  }
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  line-height: 4;
+  text-align: center;
+
+  span {
+    margin: 0 1rem;
+  }
+
+  &:before,
+  &:after {
+    content: ' ';
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    margin-top: 3px;
+
+    border-top: 1px solid var(--brand-dark);
+  }
+}
+
+.button {
+  max-width: 500px;
+  width: 100%;
+
+  margin: 1rem 0;
+  padding: 1rem;
+
+  border-width: 2px;
+  border-radius: 28px;
+
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+  font-weight: var(--font-weight-extrabold);
+}

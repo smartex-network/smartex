@@ -1,0 +1,108 @@
+@import 'assets/styles/colors.css';
+@import 'assets/styles/variables.css';
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+
+  .stat-wrapper {
+    width: 100%;
+
+    margin-bottom: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    @media (--breakpoint-lg) {
+      max-width: 33.3333%;
+      flex: 0 0 33.3333%;
+    }
+  }
+
+  .stat {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+
+    border-radius: 25px;
+    background-color: var(--brand-white);
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      color: var(--brand-dark);
+
+      .value {
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+      }
+
+      .label {
+        margin-top: 20px;
+
+        font-size: 1rem;
+        font-weight: var(--font-weight-medium);
+      }
+    }
+
+    .icon {
+      max-height: 70px;
+
+      width: 100%;
+
+      margin-left: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.income {
+      .icon {
+        max-width: 25px;
+
+        @media (--breakpoint-md) {
+          max-width: 35px;
+        }
+
+        @media (--breakpoint-lg) {
+          max-width: 45px;
+        }
+      }
+    }
+
+    &.refs {
+      .icon {
+        max-width: 42px;
+
+        @media (--breakpoint-lg) {
+          max-width: 62px;
+        }
+      }
+    }
+
+    &.account-id {
+      .icon {
+        max-width: 24px;
+
+        @media (--breakpoint-md) {
+          max-width: 37px;
+        }
+
+        @media (--breakpoint-lg) {
+          max-width: 47px;
+        }
+      }
+    }
+  }
+}

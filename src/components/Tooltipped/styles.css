@@ -1,0 +1,48 @@
+@import 'assets/styles/variables.css';
+
+.tooltipped {
+  position: relative;
+
+  transition: all 0.15s ease;
+}
+
+.tooltip {
+  z-index: 9999;
+  display: block;
+  position: absolute;
+
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+
+  background-color: black;
+  color: white;
+
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-semibold);
+  opacity: 0;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+
+  pointer-events: none;
+
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    border-top-color: black;
+    transform: translate(-50%, 50%);
+  }
+
+  &.show {
+    opacity: 1;
+    transform: translate(-50%, -150%);
+  }
+}
